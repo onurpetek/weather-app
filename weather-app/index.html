@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Sayfa | Petek Hava Durumu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="tahmin.html">Tahmin</a>
+      <a href="favoriler.html">Favoriler</a>
+      <a href="ayarlar.html">Ayarlar</a>
+      <a href="hakkinda.html">Hakkında</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="arama">
+      <h2>Şehir Ara</h2>
+      <form id="arama-formu">
+        <label for="sehir">Şehir adı</label>
+        <input type="text" id="sehir" name="sehir" placeholder="Örn. Amasya">
+        <button type="submit">Ara</button>
+      </form>
+    </section>
+
+    <section id="anlik-hava">
+      <h2>Anlık Hava Durumu</h2>
+      <article id="hava-karti">
+        <h3 id="sehir-adi">Şehir</h3>
+        <p id="sicaklik">-- °C</p>
+        <p id="aciklama">--</p>
+        <p id="nem">Nem: --%</p>
+        <p id="ruzgar">Rüzgar: -- m/s</p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Petek Weather App</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

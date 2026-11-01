@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayarlar | Petek Hava Durumu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="tahmin.html">Tahmin</a>
+      <a href="favoriler.html">Favoriler</a>
+      <a href="ayarlar.html">Ayarlar</a>
+      <a href="hakkinda.html">Hakkında</a>
+    </nav>
+  </header>
+
+  <main>
+<section>
+    <h2>Ayarlar</h2>
+    <form id="ayar-formu">
+      <fieldset>
+        <legend>Sıcaklık birimi</legend>
+        <label><input type="radio" name="birim" value="metric" checked> °C</label>
+        <label><input type="radio" name="birim" value="imperial"> °F</label>
+      </fieldset>
+      <label for="varsayilan-sehir">Varsayılan şehir</label>
+      <input type="text" id="varsayilan-sehir" name="varsayilan-sehir">
+      <button type="submit">Kaydet</button>
+    </form>
+  </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Petek Weather App</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

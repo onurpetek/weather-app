@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favoriler | Petek Hava Durumu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="tahmin.html">Tahmin</a>
+      <a href="favoriler.html">Favoriler</a>
+      <a href="ayarlar.html">Ayarlar</a>
+      <a href="hakkinda.html">Hakkında</a>
+    </nav>
+  </header>
+
+  <main>
+<section>
+    <h2>Favori Şehir Ekle</h2>
+    <form id="favori-formu">
+      <label for="favori-sehir">Şehir</label>
+      <input type="text" id="favori-sehir" name="favori-sehir">
+      <label for="favori-not">Not</label>
+      <input type="text" id="favori-not" name="favori-not">
+      <button type="submit">Ekle</button>
+    </form>
+  </section>
+  <section>
+    <h2>Favorilerim</h2>
+    <ul id="favori-listesi"></ul>
+  </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Petek Weather App</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
