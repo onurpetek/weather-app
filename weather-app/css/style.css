@@ -1,9 +1,142 @@
+:root {
+  --ana-renk: #2563eb;
+  --koyu-renk: #1e3a8a;
+  --arka-plan: #eef4ff;
+  --yazi-renk: #1f2937;
+  --soluk-yazi: #6b7280;
+  --kose: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: var(--yazi-renk);
+  background: var(--arka-plan);
+}
+
+
+header {
+  background: var(--koyu-renk);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
 }
 
 nav a {
-  margin-right: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+nav a:hover {
+  background: var(--ana-renk);
+}
+
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h2 {
+  margin: 0 0 12px;
+  color: var(--koyu-renk);
+}
+
+#arama-formu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#arama-formu label {
+  flex-basis: 100%;
+  font-weight: bold;
+}
+
+#arama-formu input {
+  flex: 1;
+  min-width: 160px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 2px solid #c7d7fe;
+  border-radius: var(--kose);
+}
+
+#arama-formu button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: var(--ana-renk);
+  border: none;
+  border-radius: var(--kose);
+  cursor: pointer;
+}
+
+#arama-formu button:hover {
+  background: var(--koyu-renk);
+}
+
+#hava-karti {
+  padding: 24px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: var(--kose);
+  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.15);
+}
+
+#sehir-adi {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+#sicaklik {
+  margin: 12px 0 4px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--ana-renk);
+}
+
+#aciklama {
+  margin: 0 0 16px;
+  color: var(--soluk-yazi);
+}
+
+.detaylar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.detaylar p {
+  margin: 0;
+  padding: 12px;
+  background: var(--arka-plan);
+  border-radius: 10px;
+}
+
+footer {
+  padding: 16px;
+  text-align: center;
+  color: #ffffff;
+  background: var(--koyu-renk);
 }
