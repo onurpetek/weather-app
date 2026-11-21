@@ -140,3 +140,11 @@ footer {
   color: #ffffff;
   background: var(--koyu-renk);
 }
+
+.hata {
+  margin: 12px 0 0;
+  padding: 10px 14px;
+  color: #b91c1c;
+  background: #fee2e2;
+  border-radius: 10px;
+}
